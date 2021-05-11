@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/gameHome.css">
+{% endblock %}
+
+{% block content %}
+
+    <header>
+        <h1>Qui va gagner</h1>
+    </header>
+    <section class="section-home">
+            <div class="contener-cards">
+                {% for robot in robots %}
+                    {% if robot.name == '' %}
+                        <div class="card-vs">
+                            <p class="card-text ">VS</p>
+                        </div>
+                    {% else %}
+                        <div class="card-robot">
+                            <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="/{{ robot.img }}" alt="Photo de Percy">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" >{{ robot.name }}</h5>
+                                    
+                                    <p class="card-text">Armes</p>
+                                    <ul>
+                                        {% for attack in  robot.attacks %}
+                                            <li>{{ attack }}</li>
+                                        {% endfor %}
+                                    </ul>  
+                                    <a href="/ReadyToGo/{{loop.index}}" class="btn btn-primary">Jouer avec {{ robot.name }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+    <section>
+
+{% endblock %}

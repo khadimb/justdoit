@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-color: #fcf9f6;
+    }
+    header{
+        height: 100px;
+        background-image: url("/assets/images/game/mars_back.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    .section-home{
+    
+    
+    
+    }
+    .contener-cards{
+        margin: auto;
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    
+    }
+    .card-vs{
+        align-self: center;
+    }
+    .card-vs p {
+    font-size: 60px;
+    }
+    .card-robot{
+       
+    }
+    .section-home {
+        
+    
+    }
+    
+    @media (max-width: 780px) { 
+        .contener-cards{
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+    }
