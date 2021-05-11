@@ -70,9 +70,9 @@ class GameController extends AbstractController
         }
 
         if ($robotSelected === $robotWin['name']) {
-            $userWinOrNot = 'Vous avez gagné. &#128079';
+            $userWinOrNot = 'Vous avez gagné !';
         } else {
-            $userWinOrNot = 'Vous avez misé sur le mauvais cheval. Essaye encore &#128512';
+            $userWinOrNot = 'Vous avez misé sur la mauvaise conserve. Essayez encore !';
         }
 
         return $this->twig->render('Game/gameWinner.html.twig', [

@@ -2,11 +2,38 @@ body {
     text-align: center;
     background-color: #fcf9f6;
     background-image: url("/assets/images/game/percy-ginnyAttack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     height: 100px;
     background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 150px;
+    color: var(--fighters-dark-color);
+    text-align: center;
+    font-family: "Heaters";
+}
+
+.attack {
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+li {
+    margin: 0;
+}
+
+h2 {
+    color: var(--fighters-primary-color);
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+
+p {
+    color: var(--fighters-dark-color);
 }
 
 .contener-cards {
@@ -22,11 +49,171 @@ header {
 
 .card-vs p {
     font-size: 60px;
+    font-family: "Heaters";
+    margin: 3em;
+    color: black;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    border: rgba(255, 255, 255, 0);
+}
+
+.section-home {
+    display: flex;
+    margin: 10em;
+}
+
+.play:hover {
+    text-decoration: underline;
+    background-color:chocolate;
+    color: black;
+}
+
+.choose {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    font-size: 25pt;
+}
+
+.choose:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: black;
 }
 
 @media (max-width: 780px) { 
     .contener-cards {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .choose {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    .fighters-button {
+        font-size: 20px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .section-home {
+        display: flex;
+        justify-content: center;
+        width: 30vh;
+    }
+
+    .contener-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .card-vs p {
+        display: flex;
+        align-self: center;
+        margin: 0;
+    }
+}
+
+.fighters-return {
+    font-size: 25px;
+    padding: 15px;
+    transition: var(--fighters-transition);
+    text-decoration: none;
+    text-align: left;
+    color: var(--fighters-dark-color);
+    background-color: var(--fighters-light-color);
+    border: solid var(--fighters-primary-color) 1px;
+    border-radius: var(--fighters-border-radius);
+}
+
+.fighters-return:hover {
+    color: var(--fighters-primary-color);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
+
+.section-home {
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: var(--fighters-margin);
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.card {
+    transition: var(--fighters-transition);
+}
+
+.card:hover {
+    transform: var(--fighters-card-hover-transform);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.gif {
+    width: 1000px;
+    border: black solid 2px;
+}
+
+.win {
+    font-size: 60px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: black 1px 1px 1px;
+}
+
+.message {
+    font-size: 60px;
+    color: darkred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: black 1px 1px 1px;
+}
+
+.finish {
+    font-family: "Heaters";
+    font-size: 200px;
+    color:darkred;
+}
+
+.octogon {
+    margin-bottom: 5em;
+}
+
+.fighters-button {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 780px) { 
+    .gif {
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .message {
+        font-size: 40px;
+    }
+
+    .win {
+        font-size: 35px;
+    }
+
+    .finish {
+        font-size: 90px;
     }
 }
