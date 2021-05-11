@@ -7,9 +7,16 @@
 {% block content %}
 
     <header>
-        <h1>Qui va gagner</h1>
+        <h1>Octogone !</h1>
     </header>
-    <section class="section-home">
+    <p>
+        <button class="choose btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Choisissez votre combattant !
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <section class="section-home">
             <div class="contener-cards">
                 {% for robot in robots %}
                     {% if robot.name == '' %}
@@ -21,25 +28,24 @@
                             <div class="card" style="width: 20rem;">
                                 <img class="card-img-top" src="/{{ robot.img }}" alt="Photo de Percy">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center" >{{ robot.name }}</h5>
-                                    
-                                    <p class="card-text">Armes</p>
-                                    <ul>
-                                        {% for attack in  robot.attacks %}
-                                            <li>{{ attack }}</li>
-                                        {% endfor %}
-                                    </ul>  
-                                    <a href="ReadyToGo/{{ robot.name }}" class="btn btn-primary">Jouer avec {{ robot.name }}</a>
+                                <h5 class="card-title text-center" >{{ robot.name }}</h5>
+                                <p class="card-text">Armes</p>
+                                <ul class="attack">
+                                    {% for attack in  robot.attacks %}
+                                        <li>{{ attack }}</li>
+                                    {% endfor %}
+                                </ul>  
+                                <a href="ReadyToGo/{{ robot.name }}" class="play btn btn-danger">Jouer avec {{ robot.name }}</a>
                                 </div>
                             </div>
                         </div>
                     {% endif %}
                 {% endfor %}
             </div>
-    </section>
-
+        </section>
+        </div>
+    </div>
     <div class="fighters-button">
         <a href="/home/index" class="fighters-return">← Retour à l'accueil</a>
     </div>
-    
 {% endblock %}

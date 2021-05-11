@@ -1,24 +1,19 @@
 {% extends 'layout.html.twig' %}
-
+{% block title %}{{ parent() }} - Combat{% endblock %}
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/gameHome.css">
 {% endblock %}
-
 {% block content %}
-
-    <header>
-        <h1>Le gagnant est : </h1>
+    <header class="octogon">
+        <h1>Octogone</h1>
     </header>
-    
-    <section>
-        <h3>{{ UserWinOrNot }}</h3>
-        <h2>{{ userStat }}</h2>
-        <h3>{{ robotWin.name }}</h3>
-
-        <img class="card-img-top" src="/{{ robotWin.img }}" alt="Photo de Percy">
-
-        <p>{{ robotWin.name }} a gagné grace a son attaque {{ robotWin.attack }}</p>
-
+    <section class="result">
+        <h3 class="message">{{ UserWinOrNot }}</h3>
+        <img class="gif card-img-top" src="/{{ robotWin.img }}" alt="Image de l'attaque">
+        <p class="win">{{ robotWin.name }} a gagné grâce à son attaque {{ robotWin.attack }}</p>
+        <p class="finish">FINISH HIM !!!</p>
+        <div class="fighters-button">
+            <a href="/game/index" class="fighters-return">← Retour dans l'octogone</a>
+        </div>
     </section>
-
 {% endblock %}
