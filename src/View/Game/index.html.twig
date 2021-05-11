@@ -29,13 +29,17 @@
                                             <li>{{ attack }}</li>
                                         {% endfor %}
                                     </ul>  
-                                    <a href="/ReadyToGo/{{loop.index}}" class="btn btn-primary">Jouer avec {{ robot.name }}</a>
+                                    <a href="ReadyToGo/{{ robot.name }}" class="btn btn-primary">Jouer avec {{ robot.name }}</a>
                                 </div>
                             </div>
                         </div>
                     {% endif %}
                 {% endfor %}
             </div>
-    <section>
+    </section>
 
+    <div class="fighters-button">
+        <a href="/home/index" class="fighters-return">← Retour à l'accueil</a>
+    </div>
+    
 {% endblock %}
