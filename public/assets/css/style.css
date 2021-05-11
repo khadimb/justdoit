@@ -1,0 +1,16 @@
+:root {
+    --fighters-dark-color: #4d4d4d;
+    --fighters-light-color: #fcf9f6;
+    --fighters-extralight-color: #fcf9f6;
+    --fighters-primary-color: #C67C3B;
+    --fighters-margin: 50px;
+    --fighters-card-hover-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    --fighters-card-hover-transform: scale(1.025);
+    --fighters-transition: 0.4s;
+    --fighters-border-radius: 5px 5px 5px 5px;
+}
+
+@font-face {
+    font-family: "Heaters";
+    src: url("../fonts/Heaters.otf");
+}

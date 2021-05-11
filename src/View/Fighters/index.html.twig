@@ -1,9 +1,38 @@
 {% extends 'layout.html.twig' %}
 {% block title %}{{ parent() }} - Combattants{% endblock %}
 {% block stylesheet %}
-    <link rel="stylesheet" href="/assets/css/fighters.css">
+    <link rel="stylesheet" href="../assets/css/fighters.css">
 {% endblock %}
 
 {% block content %}
-    <h1>Les combattants</h1>
+<h1>Combattants</h1> 
+<section class="fighters">
+<div class="fighters-button">
+    <a href="/home/index" class="fighters-return">← Retour à l'accueil</a>
+</div>
+<div class="ginny col-xl-4 offset-xl-4">
+    <div class="card mb-3">
+        <img src="/assets/images/Ginny.png" class="card-img-top" alt="Photo du robot Ginny">
+        <div class="card-body">
+            <h2 class="card-title">Rover "Ginny" Ingenuity</h2>
+            <p class="card-text text-muted">Organisation : NASA</p>
+            <p class="card-text">Ingenuity, surnommé "Ginny", est un petit hélicoptère, il est le premier engin à effectuer un vol motorisé sur une autre planète que la Terre. Son objectif était de tester les capacités d'un tel appareil dans le domaine de la reconnaissance optique du terrain, le tout dans un environnement limitant la portance et les délais de communication.</p>
+            <p class="card-text">Depuis l'ouverture du Mars Weapon Fight Club, Ginny est un hélicoptère de combat, véritable machine de guerre prête à tout pour dominer son homologue et rival "Percy", ses hélices et sa mobilité hors pair, font de lui un adversaire redoutable et imprévisible.</p>
+            <p class="card-text"><small class="text-muted">Date d'atterrissage sur Mars : 18/02/2021</small></p>
+        </div>
+    </div>
+</div>
+<div class="percy col-xl-4 offset-xl-4">
+    <div class="card mb-3">
+        <img src="/assets/images/Percy.jpg" class="card-img-top" alt="Photo du robot Percy">
+        <div class="card-body">
+            <h2 class="card-title">Rover "Percy" Perseverance</h2>
+            <p class="card-text text-muted">Organisation : NASA</p>
+            <p class="card-text">Perseverance est un robot de la taille d'une voiture, envoyé sur Mars pour explorer le cratère Jezero. Il a hérité de la plupart des propriétés de son prédécesseur <em>Curiosity</em>, qui avait lui aussi pour objectif la recherche de sites ayant pu abriter des formes de vie.</p>
+            <p class="card-text">Depuis l'ouverture du Mars Weapon Fight Club, Percy est la masse des rovers de Mars, son gabarit égal à celui d'une voiture lui permet d'avoir un avantage considérable lors de ses oppositions.</p>
+            <p class="card-text"><small class="text-muted">Date d'atterrissage sur Mars : 18/02/2021</small></p>
+        </div>
+    </div>
+</div>
+</section>
 {% endblock %}
