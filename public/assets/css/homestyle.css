@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Heaters";
+  src: url("../fonts/Heaters.otf");
+}
+
+body {
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 100px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Heaters';
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 600px;
+    margin: 1vw auto;
+    position: relative;
+    text-align: center;
+    width: 94vw;
+    justify-content: center;
+  }
+  
+  .product {
+    flex: auto;
+    font-size: 1.5rem;
+    margin: 0 1vw calc(1vw + 50px) 1vw;
+    min-width: calc(33% - 2vw);
+    position: relative;
+  }
+  
+  .product:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+  
+  .content {
+    background: white;
+    border-radius: 30%;
+    height: 84%;
+    margin: 8%;
+    position: absolute;
+    width: 84%;
+    vertical-align: middle;
+    z-index: 5000;
+  }
+  
+  .product:hover .effect-1,
+  .product:hover .effect-2 {
+    display: block;
+  }
+  
+  .effect-1,
+  .effect-2 {
+    border-radius: 30%;
+    display: none;
+    mix-blend-mode: multiply;
+    height: 84%;
+    position: absolute;
+    width: 84%;
+    z-index: 3000;
+  }
+  
+  .effect-1 {
+    animation: rotate 1.8s linear infinite;
+    background: #eaceb6;
+  }
+  
+  .effect-2 {
+    animation: rotate 1.2s linear reverse infinite;
+    background: #eaceb6;
+  }
+  
+  @keyframes rotate {
+    0% {
+      top: 0;
+      left: 8%;
+    }
+    25% {
+      top: 8%;
+      left: 0%;
+    }
+    50% {
+      top: 16%;
+      left: 8%;
+    }
+    75% {
+      top: 8%;
+      left: 16%;
+    }
+    100% {
+      top: 0;
+      left: 8%;
+    }
+  }
+  
+  .title {
+    position: relative;
+    top: calc(100% + 16px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  .link:hover {
+    color: white;
+  }
+  
+  .title span {
+    display: block;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  
+  .exercise {
+    background-image: linear-gradient(135deg, #eaceb6 0%, #d0935d 100%);
+    border-radius: 5px;
+    height: 50%;
+    margin: 25%;
+    width: 50%;
+  }
+
+  .sleep {
+    background-image: linear-gradient(to top, #d0935d 0%, #eaceb6 100%);
+    border-radius: 50%;
+    height: 50%;
+    margin: 25%;
+    width: 50%;
+  }
+  
+  .meditation {
+    background-image: linear-gradient(
+      to top,
+      #eaceb6 0%,
+      #d0935d 99%,
+      #d0935d 100%
+    );
+    border-radius: 5px;
+    height: 40%;
+    margin: 30%;
+    transform: rotate(45deg);
+    width: 40%;
+  }
+
+  .fighters-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: var(--fighters-margin);
+  }
+
+.fighters-return {
+    font-size: 25px;
+    padding: 15px;
+    transition: var(--fighters-transition);
+    text-decoration: none;
+    text-align: center;
+    color: var(--fighters-dark-color);
+    background-color: var(--fighters-light-color);
+    border: solid var(--fighters-primary-color) 1px;
+    border-radius: var(--fighters-border-radius);
+    width: 300px;
+  }
+  .fighters-return:hover {
+    color: var(--fighters-primary-color);
+    box-shadow: var(--fighters-card-hover-shadow);
+  }
+
+  .style425 {
+    display: none;
+  }
+  
+  @media (max-width: 768px)  {
+    h2 {
+      margin-bottom: 100px;
+    }
+    .menu {
+      flex-wrap: nowrap;
+    }
+    .product {
+      max-width: 50px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .menu {
+      display: none;
+    }
+    h1 {
+      font-size: 150px;
+      margin-top: 10px;
+    }
+    .style425 {
+      display: block;
+    }  
+  }
