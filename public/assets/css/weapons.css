@@ -1,0 +1,68 @@
+.weapons {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.card {
+    border: black solid 1px;
+    margin: 2em;
+    background-color: rgba(255, 106, 0, 0.363);
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    color:brown;
+    margin: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.fight-background {
+    width: 100%;
+}
+
+.advertisement {
+    font-size: 25pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.toggle {
+    width: 200px;
+}
+
+.toggle:hover {
+    text-decoration: underline;
+    background-color:chocolate;
+    color: black;
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        display: flex;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 33pt;
+    }
+
+    .advertisement {
+        font-size: 20pt;
+        display: flex;
+        text-align: center;
+    }
+}
