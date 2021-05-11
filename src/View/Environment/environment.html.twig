@@ -3,5 +3,22 @@
     <link rel="stylesheet" href="/assets/css/environment.css">
 {% endblock %}
 {% block content %}
-    <h1> ENVIRONNEMENT </h1>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            {% for map in maps|slice(1, 4) %}
+                {% if loop.index == 1 %}
+                    <div class="carousel-item active">
+                {% else %}
+                    <div class="carousel-item">
+                {% endif %}
+                <p>{{ loop.index }}</p>
+                <img class="d-block w-100" src={{ map.img_src }} alt="photo de mars avec {{map.rover.name}}">
+                <h5>{{map.rover.name}}</h5>
+                <p>{{map.earth_date}}</p>  
+            {% endfor %}  
+        </div>
+    </div>
+
 {% endblock %}
