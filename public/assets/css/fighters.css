@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Heaters";
+    src: url("../fonts/Heaters.otf");
+}
+
+h1 {
+    text-align: center;
+    font-family: "Heaters";
+}
+
+h2 {
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+
+body {
+    background-color: #fcf9f6;
+}
