@@ -1,0 +1,128 @@
+@import url("style.css");
+
+body {
+    background-color: var(--fighters-light-color);
+}
+
+h1 {
+    font-size: 150px;
+    color: var(--fighters-dark-color);
+    text-align: center;
+    font-family: "Heaters";
+}
+
+h2 {
+    color: var(--fighters-primary-color);
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+
+p {
+    color: var(--fighters-dark-color);
+}
+
+.weapon {
+    transition: var(--fighters-transition);
+}
+
+.weapon:hover {
+    transform: var(--fighters-card-hover-transform);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
+
+.fighters {
+    background-color: var(--fighters-extralight-color);
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: var(--fighters-margin);
+    margin-left: 12%;
+    margin-right: 12%;
+    box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.25);
+}
+
+.fighters-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: var(--fighters-margin);
+}
+
+.fighters-return {
+    font-size: 25px;
+    padding: 15px;
+    transition: var(--fighters-transition);
+    text-decoration: none;
+    text-align: left;
+    color: var(--fighters-dark-color);
+    background-color: var(--fighters-light-color);
+    border: solid var(--fighters-primary-color) 1px;
+    border-radius: var(--fighters-border-radius);
+}
+
+.fighters-return:hover {
+    color: var(--fighters-primary-color);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fighters {
+        margin-left: 0%;
+        margin-right: 0%;
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .fighters-return {
+        font-size: 20px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.advertisement {
+    font-size: 25pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.toggle {
+    width: 200px;
+}
+
+.toggle:hover {
+    text-decoration: underline;
+    background-color:chocolate;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    .advertisement {
+        font-size: 20pt;
+        display: flex;
+        text-align: center;
+    }
+
+    .weapon {
+        display: flex;
+        justify-content: center;
+        width: 30vh;
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+    }
+}

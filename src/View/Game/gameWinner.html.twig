@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/gameHome.css">
+{% endblock %}
+
+{% block content %}
+
+    <header>
+        <h1>Le gagnant est : </h1>
+    </header>
+    
+    <section>
+        <h3>{{ UserWinOrNot }}</h3>
+        <h2>{{ userStat }}</h2>
+        <h3>{{ robotWin.name }}</h3>
+
+        <img class="card-img-top" src="/{{ robotWin.img }}" alt="Photo de Percy">
+
+        <p>{{ robotWin.name }} a gagné grace a son attaque {{ robotWin.attack }}</p>
+
+    </section>
+
+{% endblock %}
