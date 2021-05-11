@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: #fcf9f6;
+    background-image: url("/assets/images/game/percy-ginnyAttack.jpg");
+}
+
+header {
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.contener-cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-vs {
+    align-self: center;
+}
+
+.card-vs p {
+    font-size: 60px;
+}
+
+@media (max-width: 780px) { 
+    .contener-cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
