@@ -11,12 +11,15 @@ class EnvironmentController extends AbstractController
         $key = 'Uhb88PepnBJsmemDorgenrrjO1qUIovFepIVw5bR';
         $client = HttpClient::create();
         $response = $client->request('GET', 'http://mars-photos.herokuapp.com/
-            api/v1/rovers/Perseverance/photos?earth_date=2021-05-09?api_key=' . $key);
+        api/v1/rovers/Perseverance/photos?earth_date=2021-05-09?api_key=' . $key);
         $statusCode = $response->getStatusCode();
-        $maps = [];
+        $maps = ['photos'];
+
         if ($statusCode === 200) {
             $maps = $response->toArray();
         }
-        return $this->twig->render('Environment/environment.html.twig', ['maps' => $maps['photos']]);
+        $maps = [$maps['photos']['33'], $maps['photos']['265'],
+        $maps['photos']['203'], $maps['photos']['269'], $maps['photos']['103']];
+        return $this->twig->render('Environment/environment.html.twig', ['maps' => $maps]);
     }
 }

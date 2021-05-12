@@ -1,24 +1,53 @@
 {% extends 'layout.html.twig'%}
 {% block stylesheet %}
-    <link rel="stylesheet" href="/assets/css/environment.css">
+    <link rel="stylesheet" href="/assets/css/Environment.css">
 {% endblock %}
 {% block content %}
+    <section>
+        <h1>Les arènes</h1>
+        <div class="container-cards">
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.0.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ maps.0.rover.name }}</h5>
+                    <p class="card-text">La première arène de combat dédiée aux Winner de la muerte.</p>
+                </div>
+            </div>
+        
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.1.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ maps.1.rover.name }}</h5>
+                    <p class="card-text">La grisaille est de mise dans les les bas fonds de Mars. Une arène pour les Caïds. </p>
+                </div>
+            </div>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.2.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ maps.2.rover.name }}</h5>
+                    <p class="card-text">Il était une fois dans les plaines désertes du grand Ouest Marsien... </p>
+                </div>
+            </div>
 
-            {% for map in maps|slice(1, 4) %}
-                {% if loop.index == 1 %}
-                    <div class="carousel-item active">
-                {% else %}
-                    <div class="carousel-item">
-                {% endif %}
-                <p>{{ loop.index }}</p>
-                <img class="d-block w-100" src={{ map.img_src }} alt="photo de mars avec {{map.rover.name}}">
-                <h5>{{map.rover.name}}</h5>
-                <p>{{map.earth_date}}</p>  
-            {% endfor %}  
+                    <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.3.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ maps.3.rover.name }}</h5>
+                    <p class="card-text">Dur comme la pierre, il faut être, pour survivre à la dangereuse arène de rocs.</p>
+                </div>
+            </div>
+
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.4.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ maps.4.rover.name }}</h5>
+                    <p class="card-text">Pour finir, choisissez cette partie de la planète rouge, pour un bain de soleil... Sanglant.</p>
+                </div>
+            </div>
         </div>
-    </div>
-
+        <div class="environment-button">
+            <a href="/home/index" class="environment-return">← Retour à l'accueil</a>
+        </div>
+    </section>
 {% endblock %}
