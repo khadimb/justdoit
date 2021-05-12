@@ -217,6 +217,13 @@ p {
     margin-bottom: 20px;
 }
 
+.arena {
+    width: 500px;
+    text-align: center;
+    margin-left: 5em;
+    border: black solid 2px;
+}
+
 @media screen and (max-width: 780px) { 
     .gif {
         width: 350px;
@@ -254,5 +261,10 @@ p {
         background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .arena {
+        margin: 0;
+        width: 350px;
     }
 }

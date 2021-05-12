@@ -4,15 +4,13 @@
     <link rel="stylesheet" href="/assets/css/gameHome.css">
 {% endblock %}
 {% block content %}
-{{ dump(  map.img_src)}}
- <div class="body-background" style="background-image: url({{ maps.0.img_src }});"> 
     <header class="octogon">
         <h1>Kombat</h1>
     </header>
     <section class="result">
         <h3 class="message">{{ UserWinOrNot }}</h3>
-        <img class="card-img" src="{{  map.img_src }}" width="10" alt="Image de l'arène" >
         <img class="gif card-img-top" src="/{{ robotWin.img }}" alt="Image de l'attaque">
+        <img class="arena card-img" src="{{  map.img_src }}" width="10" alt="Image de l'arène" >
         <div class="win-result">
             <p class="win"><strong>{{ robotWin.name }}</strong> a gagné grâce à son attaque <strong>{{ robotWin.attack }}</strong> dommage pour <strong>{{ robotLose.name }}</strong> qui n'aurait pas du utiliser <strong>{{ robotLose.attack }}</strong></p>
         </div>
@@ -22,5 +20,4 @@
             <a href="/game/index" class="fighters-return">← Retour dans l'arène</a>
         </div>
     </section>
-|</div>
 {% endblock %}
