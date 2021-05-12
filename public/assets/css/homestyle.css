@@ -13,17 +13,17 @@ body {
   }
   
   h1 {
-    font-size: 100px;
-    margin-top: 80px;
+    font-size: 180px;
+    margin-top: 10px;
     text-align: center;
     font-family: 'Heaters';
   }
 
   h2 {
     text-align: center;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 70px;
   }
   
   .menu {
@@ -205,15 +205,19 @@ body {
     }
   }
 
-  @media (max-width: 425px) {
+  @media screen and (max-width: 425px) {
     .menu {
       display: none;
     }
     h1 {
-      font-size: 150px;
+      font-size: 90px;
       margin-top: 10px;
     }
     .style425 {
       display: block;
     }  
+
+    h2 {
+      font-size: 40px;
+    }
   }

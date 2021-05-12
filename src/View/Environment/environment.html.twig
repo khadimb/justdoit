@@ -1,4 +1,5 @@
 {% extends 'layout.html.twig'%}
+{% block title %}{{ parent() }} - Arènes{% endblock %}
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/Environment.css">
 {% endblock %}
@@ -9,7 +10,7 @@
             <div class="card m-4" style="width: 15rem;">
                 <img class="card-img-top" src={{ maps.0.img_src }} alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{ maps.0.rover.name }}</h5>
+                    <h5 class="card-title">Amphithéatre du bain d'huile</h5>
                     <p class="card-text">La première arène de combat dédiée aux Winner de la muerte.</p>
                 </div>
             </div>
@@ -17,23 +18,23 @@
             <div class="card m-4" style="width: 15rem;">
                 <img class="card-img-top" src={{ maps.1.img_src }} alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{ maps.1.rover.name }}</h5>
-                    <p class="card-text">La grisaille est de mise dans les les bas fonds de Mars. Une arène pour les Caïds. </p>
+                    <h5 class="card-title">Alunissage imminent</h5>
+                    <p class="card-text">La grisaille est de mise dans les bas fonds de Mars. Une arène pour les Caïds. </p>
                 </div>
             </div>
 
             <div class="card m-4" style="width: 15rem;">
                 <img class="card-img-top" src={{ maps.2.img_src }} alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{ maps.2.rover.name }}</h5>
+                    <h5 class="card-title">On the rock !</h5>
                     <p class="card-text">Il était une fois dans les plaines désertes du grand Ouest Marsien... </p>
                 </div>
             </div>
 
-                    <div class="card m-4" style="width: 15rem;">
+            <div class="card m-4" style="width: 15rem;">
                 <img class="card-img-top" src={{ maps.3.img_src }} alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{ maps.3.rover.name }}</h5>
+                    <h5 class="card-title">La caverne des hommes verts</h5>
                     <p class="card-text">Dur comme la pierre, il faut être, pour survivre à la dangereuse arène de rocs.</p>
                 </div>
             </div>
@@ -41,8 +42,31 @@
             <div class="card m-4" style="width: 15rem;">
                 <img class="card-img-top" src={{ maps.4.img_src }} alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{ maps.4.rover.name }}</h5>
-                    <p class="card-text">Pour finir, choisissez cette partie de la planète rouge, pour un bain de soleil... Sanglant.</p>
+                    <h5 class="card-title">Mars: plus d'inspi</h5>
+                    <p class="card-text">Choisissez cette partie de la planète rouge, pour un bain de soleil... Sanglant.</p>
+                </div>
+            </div>
+
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.5.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Carnage de poussière</h5>
+                    <p class="card-text">Protégez vous, le sable s'insinue partout !</p>
+                </div>
+            </div>
+
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.6.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Canyon abandonné</h5>
+                    <p class="card-text">Dans le canyon tu attendras, un 5 ou un 8 te délivrera.</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 15rem;">
+                <img class="card-img-top" src={{ maps.7.img_src }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Le colisée d'arc-en-ciel noir</h5>
+                    <p class="card-text">Sombre, froide, vide, cette arène fait froid dans les circuits</p>
                 </div>
             </div>
         </div>

@@ -1,12 +1,13 @@
 @import url("style.css");
 
 body {
-    background-color: var(--fighters-light-color);
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
+    background-size: cover;
 }
 
 h1 {
     font-size: 150px;
-    color: var(--fighters-dark-color);
+    color: var(--fighters-light-color);
     text-align: center;
     font-family: "Heaters";
 }

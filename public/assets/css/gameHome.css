@@ -13,7 +13,7 @@ header {
 
 h1 {
     font-size: 150px;
-    color: var(--fighters-dark-color);
+    color: var(--fighters-light-color);
     text-align: center;
     font-family: "Heaters";
 }
@@ -71,23 +71,32 @@ p {
 
 .play:hover {
     text-decoration: underline;
-    background-color:chocolate;
-    color: black;
+    color: var(--fighters-light-color);
+    border: var(--fighters-light-color) 1px solid;
+}
+
+.play {
+    background-color: rgb(177, 47, 30);
+    border: var(--fighters-dark-color) 1px solid;
+    color: var(--fighters-light-color);
 }
 
 .choose {
     margin-top: 3em;
     margin-bottom: 1.5em;
     font-size: 25pt;
+    background-color: rgb(177, 47, 30);
+    border: var(--fighters-dark-color) 1px solid;
+    color: var(--fighters-light-color);
 }
 
 .choose:hover {
     text-decoration: underline;
-    background-color: white;
-    color: black;
+    color: var(--fighters-light-color);
+    border: var(--fighters-light-color) 1px solid;
 }
 
-@media (max-width: 780px) { 
+@media screen and (max-width: 780px) { 
     .contener-cards {
         flex-direction: column;
         justify-content: center;
@@ -179,6 +188,7 @@ p {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: black 1px 1px 1px;
+    margin-top: 60px;
 }
 
 .message {
@@ -186,6 +196,7 @@ p {
     color: darkred;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: black 1px 1px 1px;
+    margin-bottom: 60px;
 }
 
 .finish {
@@ -215,9 +226,14 @@ p {
 
     .win {
         font-size: 35px;
+        color: darkred;
     }
 
     .finish {
         font-size: 90px;
+    }
+
+    h1 {
+        color: var(--fighters-dark-color)
     }
 }

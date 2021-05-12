@@ -1,11 +1,11 @@
 {% extends 'layout.html.twig' %}
-{% block title %}{{ parent() }} - Combat{% endblock %}
+{% block title %}{{ parent() }} - Kombat{% endblock %}
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/gameHome.css">
 {% endblock %}
 {% block content %}
     <header class="octogon">
-        <h1>Octogone</h1>
+        <h1>Kombat</h1>
     </header>
     <section class="result">
         <h3 class="message">{{ UserWinOrNot }}</h3>
@@ -14,7 +14,7 @@
         <p class="win-citation">{{ robotWin.citation }}</p>
         <p class="finish">FINISH HIM !!!</p>
         <div class="fighters-button">
-            <a href="/game/index" class="fighters-return">← Retour dans l'octogone</a>
+            <a href="/game/index" class="fighters-return">← Retour dans l'arène</a>
         </div>
     </section>
 {% endblock %}
