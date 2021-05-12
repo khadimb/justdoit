@@ -1,0 +1,71 @@
+.container-cards {
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ h1 {
+    font-size: 150px;
+    color: var(--fighters-light-color);
+    text-align: center;
+    font-family: "Heaters";
+}
+
+.container-cards p {
+    color: var(--fighters-dark-color);
+}
+
+body {
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
+  background-size: cover;
+}
+
+.container-cards {
+    background-color: var(--fighters-extralight-color);
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: var(--fighters-margin);
+    margin-left: 12%;
+    margin-right: 12%;
+    box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.25);
+}
+
+.container-cards .card:hover {
+    transform: var(--fighters-card-hover-transform);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
+
+.container-cards .card {
+    transition: var(--fighters-transition);
+}
+
+.container-cards h5 {
+    color: var(--fighters-primary-color);
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+
+.environment-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: var(--fighters-margin);
+}
+
+.environment-return {
+    font-size: 25px;
+    padding: 15px;
+    transition: var(--fighters-transition);
+    text-decoration: none;
+    text-align: left;
+    color: var(--fighters-dark-color);
+    background-color: var(--fighters-light-color);
+    border: solid var(--fighters-primary-color) 1px;
+    border-radius: var(--fighters-border-radius);
+}
+
+.environment-return:hover {
+    color: var(--fighters-primary-color);
+    box-shadow: var(--fighters-card-hover-shadow);
+}
