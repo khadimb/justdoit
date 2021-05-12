@@ -184,11 +184,15 @@ p {
 }
 
 .win {
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: black 1px 1px 1px;
     margin-top: 60px;
+}
+
+.win-result {
+    background-color: rgba(32, 31, 31, 0.322);
 }
 
 .message {
@@ -222,11 +226,12 @@ p {
 
     .message {
         font-size: 40px;
+        color: var(--fighters-light-color);
     }
 
     .win {
         font-size: 35px;
-        color: darkred;
+        color: var(--fighters-light-color);
     }
 
     .finish {
@@ -234,6 +239,20 @@ p {
     }
 
     h1 {
-        color: var(--fighters-dark-color)
+        color: var(--fighters-light-color)
+    }
+
+    .win-citation {
+        color: var(--fighters-light-color);
+    }
+
+    .win-result {
+        background-color: none;
+    }
+
+    body {
+        background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
