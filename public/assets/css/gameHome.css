@@ -36,6 +36,10 @@ p {
     color: var(--fighters-dark-color);
 }
 
+.win-citation{
+    font-size: 30px;
+    color: var(--fighters-light-color);
+}
 .contener-cards {
     margin: auto;
     display: flex;

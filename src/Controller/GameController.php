@@ -47,13 +47,31 @@ class GameController extends AbstractController
                     'solar.gif' => 'Réfléxion solaire'
                     ];
 
+        $robotCitationsAll = ['"Je te filerai de la pommade !" Citation de Percy, le chouchou de la NASA.'
+        => 'Coup de caméra',
+        '"Tu feras gaffe, je passe !" Citation de Percy, le chouchou de la NASA.'
+        => 'Rouler',
+        '"Si seulement tes hélices étaient plus coupantes !" Citation de Percy, le chouchou de la NASA.'
+        => 'Lanceur de filet',
+        '"La bise frérot" Citation de Ginny, aérobot hélicoptère de génie.'
+        => 'Coup d\'hélice',
+        '"Et oué, je vise les genoux !" Citation de Ginny, aérobot hélicoptère de génie.'
+        => 'Charge',
+        '"Pense à tes Ray-Ban la prochaine fois !" Citation de Ginny, aérobot hélicoptère de génie.'
+        => 'Réfléxion solaire'
+        ];
+
         $attackPercy = $robotPercy['attacks'][rand(0, 2)];
         $attackGinny = $robotGinny['attacks'][rand(0, 2)];
         $attackPercyImg = array_search($attackPercy, $gifAttacks);
         $attackGinnyImg = array_search($attackGinny, $gifAttacks);
+        $percyCitations = array_search($attackPercy, $robotCitationsAll);
+        $ginnyCitations = array_search($attackGinny, $robotCitationsAll);
 
-        $ginny = ['name' => 'Ginny', 'attack' => $attackGinny, 'img' => 'assets/images/weapons/' . $attackGinnyImg];
-        $percy = ['name' => 'Percy', 'attack' => $attackPercy, 'img' => 'assets/images/weapons/' . $attackPercyImg];
+        $ginny = ['name' => 'Ginny', 'attack' => $attackGinny, 'img' => 'assets/images/weapons/' . $attackGinnyImg,
+        'citation' => $ginnyCitations];
+        $percy = ['name' => 'Percy', 'attack' => $attackPercy, 'img' => 'assets/images/weapons/' . $attackPercyImg,
+        'citation' => $percyCitations];
 
         if ($attackGinny === 'Réfléxion solaire' && $attackPercy === 'Coup de caméra') {
             $robotWin = $ginny;
