@@ -1,5 +1,5 @@
 {% extends 'layout.html.twig' %}
-
+{% block title %}{{ parent() }} - Kombat{% endblock %}
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/gameHome.css">
 {% endblock %}
@@ -7,11 +7,11 @@
 {% block content %}
 
     <header>
-        <h1>Octogone !</h1>
+        <h1>Kombat !</h1>
     </header>
     <p>
-        <button class="choose btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Choisissez votre combattant !
+        <button class="choose btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Cliquez pour choisir votre combattant !
         </button>
     </p>
     <div class="collapse" id="collapseExample">
@@ -35,7 +35,7 @@
                                         <li>{{ attack }}</li>
                                     {% endfor %}
                                 </ul>  
-                                <a href="ReadyToGo/{{ robot.name }}" class="play btn btn-danger">Jouer avec {{ robot.name }}</a>
+                                <a href="ReadyToGo/{{ robot.name }}" class="play btn">Jouer avec {{ robot.name }}</a>
                                 </div>
                             </div>
                         </div>

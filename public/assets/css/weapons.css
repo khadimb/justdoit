@@ -1,12 +1,17 @@
 @import url("style.css");
 
-body {
+/*body {
     background-color: var(--fighters-light-color);
+}*/
+
+body {
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/79/72/87Znkh.jpg);
+    background-size: cover;
 }
 
 h1 {
     font-size: 150px;
-    color: var(--fighters-dark-color);
+    color: var(--fighters-light-color);
     text-align: center;
     font-family: "Heaters";
 }
@@ -94,18 +99,22 @@ p {
 }
 
 .advertisement {
-    font-size: 25pt;
+    font-size: 20pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .toggle {
     width: 200px;
+    background-color: var(--fighters-primary-color);
+    color: var(--fighters-light-color);
+    font-size: 25px;
 }
 
 .toggle:hover {
     text-decoration: underline;
-    background-color:chocolate;
-    color: black;
+    background-color: var(--fighters-light-color);
+    color:var(--fighters-primary-color);
+    border: var(--fighters-primary-color) solid 1px;
 }
 
 @media screen and (max-width: 400px) {
