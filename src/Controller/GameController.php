@@ -105,10 +105,9 @@ class GameController extends AbstractController
         if ($statusCode === 200) {
             $maps = $response->toArray();
         }
-        $maps = [$maps['photos']['33'], $maps['photos']['265'], $maps['photos']['203'],
-         $maps['photos']['269'], $maps['photos']['103'], $maps['photos']['5'], $maps['photos']['77'], $maps['photos']['56']];
-        $map =  $maps [rand(0, 7) ];
-        var_dump( $map);
+        $maps = [$maps['photos']['33'], $maps['photos']['265'], $maps['photos']['203'],  $maps['photos']['269'],
+         $maps['photos']['103'], $maps['photos']['5'], $maps['photos']['77'], $maps['photos']['56']];
+        $map =  $maps [rand(0, 7)];
         return $this->twig->render('Game/gameWinner.html.twig', [
             'robotWin' => $robotWin,
             'robotLose' => $robotLose,
